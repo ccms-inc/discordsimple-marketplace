@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DISCORDsimple plugin icon — CCMS Hosting.
+  Original mark: a rounded-square chat bubble with a megaphone (announcements)
+  in Discord blurple #5865F2 on a transparent background. This is NOT Discord's
+  trademarked logo. Master is 512x512; scales cleanly to favicon sizes.
+  Export PNG rasters from this file.
+-->
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DISCORDsimple by CCMS Hosting">
+  <!-- rounded-square chat bubble with a tail at bottom-left -->
+  <path d="M128 72 h256 a64 64 0 0 1 64 64 v160 a64 64 0 0 1 -64 64 H232 l-72 72 v-72 h-32 a64 64 0 0 1 -64 -64 V136 a64 64 0 0 1 64 -64 Z"
+        fill="none" stroke="#5865F2" stroke-width="30" stroke-linejoin="round"/>
+
+  <!-- megaphone -->
+  <g fill="#5865F2">
+    <!-- mouthpiece -->
+    <rect x="138" y="192" width="36" height="48" rx="12"/>
+    <!-- horn -->
+    <path d="M174 196 L296 142 L296 290 L174 236 Z" stroke="#5865F2" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sound waves -->
+  <g fill="none" stroke="#5865F2" stroke-linecap="round">
+    <path d="M322 180 a52 52 0 0 1 0 88" stroke-width="22"/>
+    <path d="M352 152 a92 92 0 0 1 0 144" stroke-width="22"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "discordsimple": {
+      "type": "http",
+      "url": "${DISCORDSIMPLE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${DISCORDSIMPLE_CONNECTOR_KEY}"
+      }
+    }
+  }
+}
