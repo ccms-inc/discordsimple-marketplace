@@ -6,10 +6,10 @@
   "description": "Connect Claude to your Discord servers through DISCORDsimple, a multi-tenant remote MCP server (Streamable HTTP) operated by CCMS Hosting. Post announcements and briefs — new support emails, project-management alerts, scheduled morning briefs — to the channels you choose, as text or rich embeds. @everyone and role pings are disabled, message content is never stored, and your bot credentials live on the CCMS server — never in this plugin and never sent to Anthropic.",
   "author": {
     "name": "CCMS Hosting (Joe Charnin)",
-    "email": "ccmshightech@gmail.com",
-    "url": "https://ccmshightech.com"
+    "email": "support@ccmssolutions.com",
+    "url": "https://ccmssolutions.com"
   },
-  "homepage": "https://ccmshightech.com/discordsimple/",
+  "homepage": "https://ccmssolutions.com/discordsimple/",
   "repository": "https://github.com/ccms-inc/discordsimple-marketplace",
   "license": "proprietary",
   "keywords": [
@@ -21,4 +21,5 @@
     "mcp"
   ],
   "defaultEnabled": false,
-  "mcpServers": "./.
+  "mcpServers": "./.mcp.json"
+}

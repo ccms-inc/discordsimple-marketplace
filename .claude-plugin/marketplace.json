@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
   "name": "ccms-hosting",
-  "description": "CCMS Hosting plugins for Claude — connectors built and operated by CCMS Hightech.",
+  "description": "CCMS Hosting plugins for Claude — connectors built and operated by Complete Content Management Services.",
   "version": "1.0.0",
   "owner": {
     "name": "CCMS Hosting (Joe Charnin)",
-    "email": "ccmshightech@gmail.com",
-    "url": "https://ccmshightech.com"
+    "email": "support@ccmssolutions.com",
+    "url": "https://ccmssolutions.com"
   },
   "metadata": {
     "pluginRoot": "./plugins"
@@ -20,9 +20,9 @@
       "description": "Let Claude post announcements and briefs to your Discord channels through DISCORDsimple, a multi-tenant remote MCP server operated by CCMS Hosting. List your channels, post text or rich embeds, and read recent history to avoid double-announcing. @everyone and role pings are disabled; message content is not stored.",
       "author": {
         "name": "CCMS Hosting (Joe Charnin)",
-        "email": "ccmshightech@gmail.com"
+        "email": "support@ccmssolutions.com"
       },
-      "homepage": "https://ccmshightech.com/discordsimple/",
+      "homepage": "https://ccmssolutions.com/discordsimple/",
       "repository": "https://github.com/ccms-inc/discordsimple-marketplace",
       "license": "proprietary",
       "category": "productivity",
@@ -39,3 +39,6 @@
         "discord",
         "productivity"
       ]
+    }
+  ]
+}

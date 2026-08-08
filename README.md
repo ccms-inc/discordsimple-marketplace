@@ -4,7 +4,7 @@
 
 This repository is the **public marketplace listing** for DISCORDsimple. It contains the plugin manifest, MCP server config, and icon assets needed to install the connector in Claude.
 
-> **Source code is proprietary.** The server that powers DISCORDsimple is operated exclusively by [CCMS Hosting](https://ccmshightech.com). This repo contains listing artifacts only — no server code.
+> **Source code is proprietary.** The server that powers DISCORDsimple is operated exclusively by [CCMS Hosting](https://ccmssolutions.com). This repo contains listing artifacts only — no server code.
 
 ---
 
@@ -21,7 +21,7 @@ This repository is the **public marketplace listing** for DISCORDsimple. It cont
 
 ## Installation
 
-1. Sign up at **[ccmshightech.com/discordsimple](https://ccmshightech.com/discordsimple/)** to get your connector key and MCP endpoint URL.
+1. Sign up at **[ccmssolutions.com/discordsimple](https://ccmssolutions.com/discordsimple/)** to get your connector key and MCP endpoint URL.
 2. In Claude, install this plugin using the manifest at `.claude-plugin/marketplace.json`.
 3. Set the required environment variables in your Claude environment:
 
@@ -47,5 +47,5 @@ DISCORDSIMPLE_CONNECTOR_KEY=<your connector key>
 
 ## Operated by
 
-**CCMS Hosting** — [ccmshightech.com](https://ccmshightech.com)  
-Support: [ccmshightech@gmail.com](mailto:ccmshightech@gmail.com)
+**CCMS Hosting** — [ccmssolutions.com](https://ccmssolutions.com)  
+Support: [support@ccmssolutions.com](mailto:support@ccmssolutions.com)
