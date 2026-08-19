@@ -1,8 +1,5 @@
 # DISCORDsimple — Acceptable Use Policy
 
-> **Status: DRAFT for Joe's review.** Part of the [Terms of Service](TERMS.md).
-> Publish alongside the Terms and Privacy Policy.
-
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting,
 3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com
 
@@ -53,7 +50,3 @@ parties, or to comply with law. We may report unlawful activity to authorities.
 ## Reporting
 
 Report suspected abuse to **support@ccmssolutions.com**.
-
----
-
-_This draft is provided for the listing and is not legal advice._

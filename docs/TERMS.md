@@ -1,11 +1,6 @@
 # DISCORDsimple — Terms of Service
 
-> **Status: DRAFT for Joe's review.** Ready to publish after you confirm entity
-> details, set the effective date, confirm pricing/refunds against your Stripe
-> setup, and have counsel review the arbitration/liability sections. Publish at
-> a public HTTPS URL (`https://ccmssolutions.com/discordsimple/terms/`).
-
-**Effective date:** _[set on publish]_
+**Effective date:** August 19, 2026
 **Service:** DISCORDsimple ("the Service")
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting
 ("CCMS", "we", "us"), 3641 SW 21st Ct, Fort Lauderdale, FL 33312, United States.
@@ -66,15 +61,13 @@ abuse.
 - We offer a **Free** plan (1 Discord server, 2 channels, text posts, 200 posts
   per month) and a **Pro** plan at **$7/month** (10 servers, unlimited
   channels, rich embeds, full message reading, 5,000 posts per month). Plan
-  entitlements are described at sign-up and may evolve. _[Confirm specifics
-  against your Stripe products.]_
+  entitlements are described at sign-up and may evolve.
 - Paid plans are billed through **Stripe** on a recurring **auto-renewing**
   monthly subscription until cancelled. By subscribing you authorize recurring
   charges to your payment method.
 - **Cancellation.** You may cancel at any time; access continues through the
   end of the paid period and does not renew thereafter.
-- **Refunds.** Fees are non-refundable except where required by law _[set your
-  refund policy, e.g. a 7-day first-charge refund]_.
+- **Refunds.** Fees are non-refundable except where required by law.
 - **Price/tax changes.** We may change prices prospectively with notice for the
   next billing cycle. Stated prices exclude applicable taxes, which you are
   responsible for.
@@ -132,11 +125,6 @@ contact us to seek an informal resolution. Any dispute not resolved informally
 will be brought exclusively in the state or federal courts located in **Broward
 County, Florida**, and you consent to their jurisdiction.
 
-> _Optional, recommended for a consumer SaaS — have counsel confirm before
-> enabling: a binding individual-arbitration clause (e.g. AAA consumer rules)
-> with a class-action waiver and a small-claims carve-out. Left out of this
-> draft pending your decision._
-
 ## 14. Changes
 
 We may update these Terms; the effective date reflects the latest version, and
@@ -148,9 +136,3 @@ take effect constitutes acceptance.
 Complete Content Management Services, Inc. (CCMS Hosting)
 3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com ·
 +1-954-693-6422
-
----
-
-_This draft is provided for the listing and is not legal advice. Have counsel
-review the billing, arbitration, and liability sections before commercial
-launch._

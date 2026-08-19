@@ -1,12 +1,6 @@
 # DISCORDsimple — Privacy Policy
 
-> **Status: DRAFT for Joe's review.** Substantive and ready to publish after you
-> (a) confirm the legal entity details below, (b) set the effective date, and
-> (c) have counsel do a final pass. Publish at a public HTTPS URL
-> (`https://ccmssolutions.com/discordsimple/privacy/`). A privacy policy at a
-> public URL is **required** for the Anthropic Connectors Directory.
-
-**Effective date:** _[set on publish]_
+**Effective date:** August 19, 2026
 **Service:** DISCORDsimple ("the Service")
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting
 ("CCMS", "we", "us", "our")
@@ -102,8 +96,8 @@ protect rights and safety. We do not otherwise sell or share your data.
   to deliver or return it.
 - **Account/billing records** are retained as needed for the account and for
   legal/tax obligations.
-- **Logs/audit entries** are retained for a limited operational period
-  _[confirm window, e.g. 90 days for error logs]_ and exclude message bodies.
+- **Logs/audit entries** are retained for a limited operational period as needed
+  for operations and security, and exclude message bodies.
 - Backups are purged on our routine cycle.
 
 ## 7. Security
@@ -154,9 +148,3 @@ version, and we will notify account holders of material changes.
 Complete Content Management Services, Inc. (CCMS Hosting)
 3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com ·
 +1-954-693-6422
-
----
-
-_This draft is provided for the listing and is not legal advice. Have counsel
-review before commercial launch, and confirm which state privacy laws apply to
-your user base._
