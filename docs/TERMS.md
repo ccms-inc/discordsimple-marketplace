@@ -58,9 +58,9 @@ abuse.
 
 ## 6. Plans, billing, and cancellation
 
-- We offer a **Free** plan (1 Discord server, 2 channels, text posts, 200 posts
-  per month) and a **Pro** plan at **$7/month** (10 servers, unlimited
-  channels, rich embeds, full message reading, 5,000 posts per month). Plan
+- We offer a **Free** plan (1 Discord server, 2 channels, text posts, 50 actions
+  per month) and a **Pro** plan at **$9/month** (10 servers, unlimited
+  channels, rich embeds, full message reading, 5,000 actions per month). Plan
   entitlements are described at sign-up and may evolve.
 - Paid plans are billed through **Stripe** on a recurring **auto-renewing**
   monthly subscription until cancelled. By subscribing you authorize recurring
