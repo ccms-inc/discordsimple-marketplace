@@ -1,0 +1,10 @@
+# This is a packaging-only repo — never commit secrets or build artifacts here.
+.env
+*.env
+config.php
+*.zip
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

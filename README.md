@@ -1,51 +1,100 @@
-# DISCORDsimple — Discord Announcements Connector for Claude
+# CCMS Hosting — Claude plugin marketplace (DISCORDsimple)
 
-**DISCORDsimple** is a remote MCP connector that lets Claude post announcements and structured briefs to your Discord channels — new support emails, project alerts, scheduled morning digests, and more.
+This repository is the public **Claude Code plugin marketplace** for
+[CCMS Hosting](https://ccmssolutions.com)'s **DISCORDsimple** product. It
+contains plugin packaging only — no server code, no secrets. Plugins here
+connect Claude to services that CCMS operates.
 
-This repository is the **public marketplace listing** for DISCORDsimple. It contains the plugin manifest, MCP server config, and icon assets needed to install the connector in Claude.
+## Plugins
 
-> **Source code is proprietary.** The server that powers DISCORDsimple is operated exclusively by [CCMS Hosting](https://ccmssolutions.com). This repo contains listing artifacts only — no server code.
+### DISCORDsimple — Discord Announcements Connector
+Let Claude post announcements and briefs to your Discord channels through
+**DISCORDsimple**, a multi-tenant remote MCP server operated by CCMS Hosting —
+new support emails, project-management alerts, scheduled morning briefs,
+whatever your Claude is asked to announce. Claude can list your channels, post
+text or rich embeds, and read recent channel history to avoid double-announcing.
+`@everyone` and role pings are disabled, and message content is never stored by
+the service.
 
----
+→ Plugin docs: [`plugins/discordsimple-connector/README.md`](plugins/discordsimple-connector/README.md)
+→ Get an account: <https://discordsimple.ccmssolutions.com>
+→ Product page: <https://ccmssolutions.com/discordsimple/>
 
-## What it does
-
-- Post text messages or rich embeds to any Discord channel your bot can access
-- List available channels across your guilds
-- Read recent channel history to avoid duplicate announcements
-- Works as a Streamable HTTP remote MCP server — no local process required
-
-> `@everyone` and role pings are disabled. Message content is never stored on CCMS servers.
-
----
-
-## Installation
-
-1. Sign up at **[ccmssolutions.com/discordsimple](https://ccmssolutions.com/discordsimple/)** to get your connector key and MCP endpoint URL.
-2. In Claude, install this plugin using the manifest at `.claude-plugin/marketplace.json`.
-3. Set the required environment variables in your Claude environment:
+## Quick install
 
 ```
-DISCORDSIMPLE_MCP_URL=<your endpoint URL from the account portal>
-DISCORDSIMPLE_CONNECTOR_KEY=<your connector key>
+/plugin marketplace add ccms-inc/discordsimple-marketplace
+/plugin install discordsimple-connector@ccms-hosting
 ```
 
----
+Then set your endpoint URL and API key as environment variables:
 
-## Files in this repo
+```
+DISCORDSIMPLE_MCP_URL       = https://discordsimple-mcp.ccmssolutions.com/
+DISCORDSIMPLE_CONNECTOR_KEY = dsk_…   (minted at https://discordsimple.ccmssolutions.com)
+```
 
-| Path | Purpose |
-|---|---|
-| `.claude-plugin/marketplace.json` | Marketplace manifest (plugin registry entry) |
-| `plugins/discordsimple-connector/.claude-plugin/plugin.json` | Plugin manifest |
-| `plugins/discordsimple-connector/.mcp.json` | MCP server config (reads env vars) |
-| `plugins/discordsimple-connector/assets/` | Icons (SVG + PNG at 512, 180, 32 px) |
-| `docs/nginx-discordsimple-mcp.conf` | NGINX snippets for the MCP endpoint subdomain |
-| `docs/nginx-discordsimple.conf` | NGINX snippets for the account portal subdomain |
+Full setup, tool reference, plan limits, and troubleshooting are in the
+[plugin README](plugins/discordsimple-connector/README.md).
 
----
+## Security posture
 
-## Operated by
+- **No secrets in this repo or plugin.** The endpoint URL and API key are
+  supplied from your environment at runtime via variable interpolation.
+- **Bearer-header authentication** over HTTPS only (OAuth also supported on the
+  endpoint); keys never appear in URLs.
+- **Server-side enforcement** of channel scoping and plan limits, regardless of
+  what the model attempts.
+- **Mass-mention pings disabled** (`@everyone`, `@here`, roles) — enforced on
+  the server.
+- **No message-content storage**; channel content returned to the assistant is
+  flagged as untrusted.
 
-**CCMS Hosting** — [ccmssolutions.com](https://ccmssolutions.com)  
-Support: [support@ccmssolutions.com](mailto:support@ccmssolutions.com)
+Details: [SECURITY.md](SECURITY.md).
+
+## What's in this repo
+
+```
+.claude-plugin/marketplace.json              # marketplace manifest
+plugins/discordsimple-connector/             # the DISCORDsimple plugin
+  .claude-plugin/plugin.json
+  .mcp.json                                  # remote MCP server pointer (no secrets)
+  README.md                                  # full setup, tools, plan limits, troubleshooting
+  assets/icon.svg                            # source icon
+  assets/icon-512.png, icon-180.png, favicon-32.png   # directory-listing rasters
+docs/
+  PRIVACY.md, TERMS.md, ACCEPTABLE-USE.md    # legal
+  nginx-discordsimple.conf                   # NGINX snippets — account portal subdomain
+  nginx-discordsimple-mcp.conf               # NGINX snippets — MCP endpoint subdomain
+SECURITY.md                                  # security overview
+```
+
+The DISCORDsimple service itself is operated by CCMS Hosting and is not part of
+this repository.
+
+## Versioning & changelog
+
+The plugin follows semantic versioning; the version in
+`.claude-plugin/marketplace.json` and `plugins/discordsimple-connector/.claude-plugin/plugin.json`
+is the source of truth.
+
+| Version | Date | Notes |
+|---|---|---|
+| 1.0.0 | 2026-06 | Initial public release: `list_channels`, `post_message`, `read_messages`. |
+
+## Legal
+
+- [Privacy Policy](docs/PRIVACY.md)
+- [Terms of Service](docs/TERMS.md)
+- [Acceptable Use Policy](docs/ACCEPTABLE-USE.md)
+- [Security overview](SECURITY.md)
+
+DISCORDsimple is an independent product of CCMS Hosting and is not affiliated
+with, endorsed by, or sponsored by Discord Inc. "Discord" is a trademark of
+Discord Inc.
+
+## Support & contact
+
+CCMS Hosting (Complete Content Management Services, Inc.)
+3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com ·
++1-954-693-6422
