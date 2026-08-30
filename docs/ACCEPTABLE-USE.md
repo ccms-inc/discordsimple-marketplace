@@ -3,6 +3,8 @@
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting,
 3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com
 
+**Effective date:** August 19, 2026
+
 This Acceptable Use Policy ("AUP") governs your use of DISCORDsimple. By using
 the Service you agree to it. We may update it as needed.
 
