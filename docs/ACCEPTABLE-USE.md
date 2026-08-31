@@ -1,7 +1,7 @@
 # DISCORDsimple — Acceptable Use Policy
 
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting,
-3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com
+300 SW 1st Ave Ste 155, Fort Lauderdale, FL 33301 · support@ccmssolutions.com
 
 **Effective date:** August 19, 2026
 
