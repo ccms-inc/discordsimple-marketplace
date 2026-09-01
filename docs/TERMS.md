@@ -3,7 +3,7 @@
 **Effective date:** August 19, 2026
 **Service:** DISCORDsimple ("the Service")
 **Provider:** Complete Content Management Services, Inc. d/b/a CCMS Hosting
-("CCMS", "we", "us"), 3641 SW 21st Ct, Fort Lauderdale, FL 33312, United States.
+("CCMS", "we", "us"), 300 SW 1st Ave Ste 155, Fort Lauderdale, FL 33301, United States.
 **Contact:** support@ccmssolutions.com · +1-954-693-6422
 
 ---
@@ -134,5 +134,5 @@ take effect constitutes acceptance.
 ## 15. Contact
 
 Complete Content Management Services, Inc. (CCMS Hosting)
-3641 SW 21st Ct, Fort Lauderdale, FL 33312 · support@ccmssolutions.com ·
+300 SW 1st Ave Ste 155, Fort Lauderdale, FL 33301 · support@ccmssolutions.com ·
 +1-954-693-6422
