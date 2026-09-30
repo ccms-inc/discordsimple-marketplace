@@ -75,8 +75,6 @@ plugins/discordsimple-connector/             # the DISCORDsimple plugin
   assets/icon-512.png, icon-180.png, favicon-32.png   # directory-listing rasters
 docs/
   PRIVACY.md, TERMS.md, ACCEPTABLE-USE.md    # legal
-  nginx-discordsimple.conf                   # NGINX snippets — account portal subdomain
-  nginx-discordsimple-mcp.conf               # NGINX snippets — MCP endpoint subdomain
 SECURITY.md                                  # security overview
 ```
 
