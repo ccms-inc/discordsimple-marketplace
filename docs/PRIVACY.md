@@ -35,7 +35,7 @@ not host Discord and does not store your conversations.
 - **Channel history (on demand, transient)** — recent messages read via
   `read_messages` to avoid double-announcing, retrieved only to fulfill a
   request and not stored.
-- **API keys** — the `dsk_` keys you mint, used to authenticate your requests.
+- **API keys** — the `csk_` keys you mint, used to authenticate your requests.
 - **Billing data** — for paid plans, your plan status and a Stripe customer
   identifier. Card numbers are handled by Stripe; we do not store them.
 - **Operational data** — server logs and a per-account audit log of post
