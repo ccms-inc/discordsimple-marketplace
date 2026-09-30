@@ -38,7 +38,7 @@ users of the connector.
 Your `csk_` key is a bearer credential — anyone holding it can post to the
 channels on your account. Keep it secret, never commit it, and use HTTPS only.
 If it may have been exposed, rotate it immediately at
-<https://discordsimple.ccmssolutions.com>.
+<https://account.ccmssolutions.com/keys>.
 
 ## Scope
 
