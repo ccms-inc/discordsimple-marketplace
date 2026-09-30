@@ -19,7 +19,7 @@ users of the connector.
 - **Encrypted in transit.** All connections use HTTPS/TLS — between Claude and
   the MCP endpoint, and between the service and Discord's API.
 - **Not in this plugin.** This plugin contains no secrets. Your API key
-  (`dsk_…`) is supplied from your own environment at runtime and sent only as
+  (`csk_…`) is supplied from your own environment at runtime and sent only as
   an `Authorization: Bearer` header (OAuth is also supported).
 
 ## What the connector does and doesn't do
@@ -35,7 +35,7 @@ users of the connector.
 
 ## Handling your API key
 
-Your `dsk_` key is a bearer credential — anyone holding it can post to the
+Your `csk_` key is a bearer credential — anyone holding it can post to the
 channels on your account. Keep it secret, never commit it, and use HTTPS only.
 If it may have been exposed, rotate it immediately at
 <https://discordsimple.ccmssolutions.com>.
