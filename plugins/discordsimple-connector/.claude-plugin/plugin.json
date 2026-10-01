@@ -2,14 +2,14 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "discordsimple-connector",
   "displayName": "DISCORDsimple — Discord Announcements Connector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connect Claude to your Discord servers through DISCORDsimple, a multi-tenant remote MCP server (Streamable HTTP) operated by CCMS Hosting. Post announcements and briefs — new support emails, project-management alerts, scheduled morning briefs — to the channels you choose, as text or rich embeds. @everyone and role pings are disabled, message content is never stored, and your bot credentials live on the CCMS server — never in this plugin and never sent to Anthropic.",
   "author": {
     "name": "CCMS Hosting (Joe Charnin)",
     "email": "support@ccmssolutions.com",
     "url": "https://ccmssolutions.com"
   },
-  "homepage": "https://ccmssolutions.com/discordsimple/",
+  "homepage": "https://discordsimple.ccmssolutions.com",
   "repository": "https://github.com/ccms-inc/discordsimple-marketplace",
   "license": "proprietary",
   "keywords": [

@@ -16,9 +16,13 @@ text or rich embeds, and read recent channel history to avoid double-announcing.
 `@everyone` and role pings are disabled, and message content is never stored by
 the service.
 
+**Pricing:** Free is 1 server, 2 channels, and 50 actions per month; Pro is
+$9/month for up to 10 servers, unlimited channels, rich embeds, and 5,000
+actions per month. An action is one tool call (list, read, or post).
+
 → Plugin docs: [`plugins/discordsimple-connector/README.md`](plugins/discordsimple-connector/README.md)
-→ Get an account: <https://discordsimple.ccmssolutions.com>
-→ Product page: <https://ccmssolutions.com/discordsimple/>
+→ Product page and setup guide: <https://discordsimple.ccmssolutions.com> · <https://discordsimple.ccmssolutions.com/setup-guide>
+→ Account, plans, and API keys: <https://account.ccmssolutions.com>
 
 ## Quick install
 
@@ -27,22 +31,29 @@ the service.
 /plugin install discordsimple-connector@ccms-hosting
 ```
 
-Then set your endpoint URL and API key as environment variables:
+Then set your API key (a `csk_…` key from **API Keys** in your account at
+[account.ccmssolutions.com](https://account.ccmssolutions.com)) as an
+environment variable:
 
 ```
-DISCORDSIMPLE_MCP_URL       = https://discordsimple-mcp.ccmssolutions.com/
-DISCORDSIMPLE_CONNECTOR_KEY = dsk_…   (minted at https://discordsimple.ccmssolutions.com)
+DISCORDSIMPLE_CONNECTOR_KEY = csk_…
+DISCORDSIMPLE_MCP_URL       = https://discordsimple-mcp.ccmssolutions.com/mcp   (optional; this is the built-in default)
 ```
+
+Restart Claude Code. Any other MCP client that can send an
+`Authorization: Bearer` header can connect to
+`https://discordsimple-mcp.ccmssolutions.com/mcp` with the same key. (The
+custom-connector flows in Claude Desktop and claude.ai expect OAuth and are not
+supported yet.)
 
 Full setup, tool reference, plan limits, and troubleshooting are in the
 [plugin README](plugins/discordsimple-connector/README.md).
 
 ## Security posture
 
-- **No secrets in this repo or plugin.** The endpoint URL and API key are
-  supplied from your environment at runtime via variable interpolation.
-- **Bearer-header authentication** over HTTPS only (OAuth also supported on the
-  endpoint); keys never appear in URLs.
+- **No secrets in this repo or plugin.** The API key is supplied from your
+  environment at runtime via variable interpolation.
+- **Bearer-header authentication** over HTTPS only; keys never appear in URLs.
 - **Server-side enforcement** of channel scoping and plan limits, regardless of
   what the model attempts.
 - **Mass-mention pings disabled** (`@everyone`, `@here`, roles) — enforced on
@@ -64,8 +75,6 @@ plugins/discordsimple-connector/             # the DISCORDsimple plugin
   assets/icon-512.png, icon-180.png, favicon-32.png   # directory-listing rasters
 docs/
   PRIVACY.md, TERMS.md, ACCEPTABLE-USE.md    # legal
-  nginx-discordsimple.conf                   # NGINX snippets — account portal subdomain
-  nginx-discordsimple-mcp.conf               # NGINX snippets — MCP endpoint subdomain
 SECURITY.md                                  # security overview
 ```
 
@@ -80,6 +89,7 @@ is the source of truth.
 
 | Version | Date | Notes |
 |---|---|---|
+| 1.0.1 | 2026-09 | Launch fixes: `csk_` keys, MCP URL now includes `/mcp` (built-in default), corrected pricing and limits, working links. |
 | 1.0.0 | 2026-06 | Initial public release: `list_channels`, `post_message`, `read_messages`. |
 
 ## Legal
